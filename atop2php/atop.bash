@@ -1,5 +1,5 @@
 #!/bin/bash
-TXT='/var/www/sochi/atop.txt'
+TXT='/var/www/site/atop.txt'
 while true; do
         atop | head -30 > $TXT
         echo "<br /> <br />" >> $TXT
