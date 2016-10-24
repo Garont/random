@@ -1,5 +1,10 @@
 #!/bin/bash
 
+#post-recieve hook:
+#if repo_path.include? "REPO_NAME.git"
+#        system('/home/git/frontupdater/update-front.sh')
+#end
+
 HOMEDIR="/home/git/frontupdater"
 CMD_LINE="cd /etc/nginx && git reset --hard HEAD && git clean -f -d && git pull && sudo /usr/local/openresty/nginx/sbin/nginx -t && sudo /etc/init.d/openresty reload"
 SERVER_LIST=(front1.example.com front2.example.com front3.example.com)
