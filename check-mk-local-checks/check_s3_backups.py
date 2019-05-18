@@ -4,7 +4,7 @@ from boto.s3.connection import S3Connection
 from datetime import datetime
 
 LIMIT=90000
-BUCKETS={"verasity-backups":"pg-%Y%m%d_%H%M%S.tar.bz2"}
+BUCKETS={"xxx-backups":"pg-%Y%m%d_%H%M%S.tar.bz2"}
 S3LOGIN="AKIAPPPPPPPSSSSSSS"
 S3PASS="XXXXXXXXXXXXXXXXXXXXXXXXXX"
 S3HOST="s3.ap-northeast-2.amazonaws.com"
